@@ -1,0 +1,137 @@
+* {
+  margin: 0px;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  color: white;
+  background-color: black;
+  width: 100%;
+  padding: 1rem;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  margin-top: 1.5rem;
+}
+
+.container .heading {
+  margin: 0.8rem;
+  padding: 0.7rem;
+}
+
+.container .heading h1 {
+  animation: jack 2s infinite;
+}
+
+.container .heading p {
+  font-family: cursive;
+}
+
+.container .information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container .information .info1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0.4rem;
+}
+
+.container .information .info1 label {
+  font-size: 1.1rem;
+  font-family: cursive;
+}
+
+.container .information .info1 input {
+  outline: none;
+  font-size: 1.1rem;
+  margin-left: 0.4rem;
+}
+
+.container .information .info1 select {
+  margin-left: 0.4rem;
+  outline: none;
+}
+
+
+.container .btn1 {
+  background-color: rgb(252, 50, 50);
+  color: white;
+  padding: 0.4rem;
+  border-radius: 1.2rem;
+  border: none;
+  margin-top: 0.4rem;
+}
+
+.container .btn1:hover {
+  box-shadow: 0 0 12px rgb(252, 50, 50);
+}
+
+.container .showZodiac {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.container .showZodiac p{
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.container .showZodiac img {
+  height: 200px;
+  width: 239px;
+  margin-top: 0.8rem;
+}
+
+.container .showZodiac .reset {
+  background-color: rgb(115, 41, 252);
+  color: white;
+  padding: 0.4rem;
+  border-radius: 0.8rem;
+
+  border: none;
+  margin-top: 0.4rem;
+}
+
+/*Using animations and keyframes*/
+
+@keyframes jack {
+  0% {
+    color: black;
+  }
+  25% {
+    color: rgb(252, 48, 48);
+  }
+  50% {
+    color: rgb(64, 64, 250);
+  }
+  75% {
+    color: greenyellow;
+  }
+  100% {
+    color: purple;
+  }
+}
+
+/*Using Media Query*/
+
+@media (max-width:365px) {
+  .container .heading h1 {
+    font-size: 1.7rem;
+  }
+}
